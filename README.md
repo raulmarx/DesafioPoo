@@ -1,18 +1,28 @@
-## Getting Started
+### Exemplo de Diagrama UML (Mermaid)
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        +tocar(): void
+        +pausar(): void
+        +selecionarMusica(musica: String): void
+    }
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+    class AparelhoTelefonico {
+        +ligar(numero: String): void
+        +atender(): void
+        +iniciarCorreioVoz(): void
+    }
 
-## Folder Structure
+    class NavegadorInternet {
+        +exibirPagina(url: String): void
+        +adicionarNovaAba(): void
+        +atualizarPagina(): void
+    }
 
-The workspace contains two folders by default, where:
+    class iPhone {
+    }
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
+```
